@@ -3,32 +3,32 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import type { Applicant } from './api/lib/applicant'
+import type { Product } from './api/lib/product'
 
 const Home: NextPage = () => {
-  const [applicants, setApplicants] = useState<Applicant[]>([])
+  const [products, setProducts] = useState<Product[]>([])
 
   useEffect(() => {
     (async () => {
-      setApplicants(await (await fetch('/api/all')).json() as Applicant[]);
+      setProducts(await (await fetch('/api/all')).json() as Product[]);
     })();
   }, []);
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>FirstAidKit</title>
+        <title>Centrito</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          (First) AidKit Task
+          Centrito Challenge
         </h1>
-        <ul className={styles['applicant-list']}>
-          {applicants.map(a => <li className={styles.applicant} key={a.name}>
+        <ul className={styles['product-list']}>
+          {products.map(a => <li className={styles.product} key={a.name}>
             <div className={styles.name}>{a.name}</div>
-            <div className={styles.phone}>{a.phone}</div>
+            <div className={styles.phone}>{a.price}</div>
           </li>
           )}
         </ul>

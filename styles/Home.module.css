@@ -23,13 +23,13 @@
   text-align: center;
 }
 
-.applicant-list {
+.product-list {
   border: 1px solid black;
   padding-left: 0;
   width: 300px;
 }
 
-.applicant {
+.product {
   list-style: none;
   padding: 10px;
   color: #666;
@@ -40,20 +40,20 @@
   background-color: white;
 }
 
-.applicant:nth-child(odd) {
+.product:nth-child(odd) {
   background-color: #eaeaea;
 }
 
-.applicant:last-child {
+.product:last-child {
   border-bottom: 0;
 }
 
-.applicant div {
+.product div {
   flex: 1 1 50%;
   padding: 10px;
   border-right: 1px solid black;
 }
 
-.applicant div:last-child {
+.product div:last-child {
   border-right: 0;
 }
