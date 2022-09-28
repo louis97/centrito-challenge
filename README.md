@@ -28,7 +28,7 @@ Styles are imported in a similar way to typescript imports, see the import at th
 
 ## The Challenges
 
-1. Explore the codebase and make sure you understand how it works. If you have any questions, ask them!
+1. Explore the codebase and make sure you understand how it works. If you have any questions, ask them! Taking a quick look into [NextJS pages](https://nextjs.org/docs/basic-features/pages) might be helpful.
 2. What other product data do we have available? Can you add new columns to display them on the page?
 3. Take a moment to read the [Next.js Image documentation](https://nextjs.org/docs/basic-features/image-optimization) and look at all the [image properties](https://nextjs.org/docs/api-reference/next/image). In light of what you read, can you improve the image loading experience on the page?
 4. We wish to provide users with the ability to add/delete products to their cart. Propose an approach to implementing this feature and after discussing you will implement it.
