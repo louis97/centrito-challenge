@@ -34,9 +34,10 @@ Styles are imported in a similar way to typescript imports, see the import at th
 1. Explore the codebase and make sure you understand how it works. If you have any questions, ask them!
 2. What other product data do we have available? Can you add new columns to display them on the page?
 3. Take a moment to read the [Next.js Image documentation](https://nextjs.org/docs/basic-features/image-optimization) and look at all the [image properties](https://nextjs.org/docs/api-reference/next/image). In light of what you read, can you improve the image loading experience on the page?
-5. We wish to provide users the ability to filter products by category? Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
-4. We wish to provide users cart-like functionality? Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
-7. We wish to let users check out their cart. Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
+5. We wish to provide users the ability to filter products by category.
+4. We wish to provide users with the ability to add products to their cart. Propose an approach to implementing this feature and after discussing you will implement it.
+7. We wish to let users check out their cart. Propose an approach to implementing this feature and after discussing you will implement it.
+6. We wish to provide users with the ability to see and delete the contents of their cart.
 6. We wish to have an admin page where internal users can add/delete/edit new products? Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
 8. We wish to extend the information we have about products to include a description and a list of ingredients. Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
 9. We wish to provide users the ability to search for products by name? Can you propose an approach to doing this? After discussing and agreeing on an approach you will implement it.
