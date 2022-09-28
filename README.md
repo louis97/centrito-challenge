@@ -33,7 +33,7 @@ Styles are imported in a similar way to typescript imports, see the import at th
 3. Take a moment to read the [Next.js Image documentation](https://nextjs.org/docs/basic-features/image-optimization) and look at all the [image properties](https://nextjs.org/docs/api-reference/next/image). In light of what you read, can you improve the image loading experience on the page?
 4. We wish to provide users with the ability to add/delete products to their cart. Propose an approach to implementing this feature and after discussing you will implement it.
 7. We wish to let users "check out" their cart.
-6. We wish to have an admin page where internal users can add/delete/edit new products.
+6. Take a moment to read about [routing in NextJS](https://nextjs.org/docs/routing/introduction) and the [next router](https://nextjs.org/docs/api-reference/next/router). In light of that, we wish to have an admin page where internal users can add/delete/edit new products.
 5. We wish to provide users the ability to filter products by category.
 8. We wish to extend the information we have about products to include a description and a list of attributes.
 9. We wish to provide users the ability to search for products by name.
