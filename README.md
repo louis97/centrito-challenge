@@ -31,10 +31,10 @@ Styles are imported in a similar way to typescript imports, see the import at th
 1. Explore the codebase and make sure you understand how it works. If you have any questions, ask them! Taking a quick look into [NextJS pages](https://nextjs.org/docs/basic-features/pages) might be helpful.
 2. What other product data do we have available? Can you add new columns to display them on the page?
 3. Take a moment to read the [Next.js Image documentation](https://nextjs.org/docs/basic-features/image-optimization) and look at all the [image properties](https://nextjs.org/docs/api-reference/next/image). In light of what you read, can you improve the image loading experience on the page?
+8. The database now has a description. We wish to extend the code to display this description on the product page.
 4. We wish to provide users with the ability to add/delete products to their cart. Propose an approach to implementing this feature and after discussing you will implement it.
 7. We wish to let users "check out" their cart.
 6. Take a moment to read about [routing in NextJS](https://nextjs.org/docs/routing/introduction) and the [next router](https://nextjs.org/docs/api-reference/next/router). In light of that, we wish to have an admin page where internal users can add/delete/edit new products.
 5. We wish to provide users the ability to filter products by category.
-8. We wish to extend the information we have about products to include a description and a list of attributes.
 9. We wish to provide users the ability to search for products by name.
 10. Propose further extensions!
