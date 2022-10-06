@@ -3,49 +3,31 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-import { CartItem } from "./api/lib/cartItem";
 import type { Product } from "./api/lib/product";
 
 const Home: NextPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [shoppingCartItems, setShoppingCartItems] = useState<CartItem[]>([]);
-
-  function productToCartItem(productTemp: Product[]) {
-    const result = [];
-    for (let i = 0; i < productTemp.length; i++) {
-      const element: CartItem = { product: productTemp[i], numberItems: 0 };
-      result.push(element);
-    }
-    return result;
-  }
+  const [shoppingCartProducts, setShoppingCartProducts] = useState<Product[]>(
+    []
+  );
 
   useEffect(() => {
     (async () => {
       const productTemp = (await (await fetch("/api/all")).json()) as Product[];
       // console.log(productTemp)
       setProducts(productTemp);
-      setShoppingCartItems(productToCartItem(productTemp));
     })();
   }, []);
 
   function handleAddToCart(product: Product) {
-    shoppingCartItems.find();
-    // encontrar el producto
-
-    // aumentar el numero items +1
-    setShoppingCartProducts([...shoppingCartItems, product]);
+    setShoppingCartProducts([...shoppingCartProducts, product]);
   }
 
   function deleteFromCart(product: Product) {
-    // encontrar el producto
-
-    // aumentar el numero items -1
     const itemsTemp = [...shoppingCartProducts];
     const itemsTempFiltered = itemsTemp.filter((obj) => obj !== product);
-    console.log(itemsTempFiltered);
     setShoppingCartProducts(itemsTempFiltered);
   }
-
   return (
     <div className={styles.container}>
       <Head>
